@@ -6,6 +6,5 @@ pickle
 requests
 keras
 scikit-learn
-Pillow
 streamlit-drawable-canvas
 svgpathtools
