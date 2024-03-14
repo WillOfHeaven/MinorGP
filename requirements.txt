@@ -2,6 +2,7 @@ numpy
 opencv-python-headless
 matplotlib
 keras
+tensorflow
 scikit-learn
 streamlit-drawable-canvas
 svgpathtools
