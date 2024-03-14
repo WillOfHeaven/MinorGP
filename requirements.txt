@@ -1,6 +1,5 @@
 numpy
 opencv-python
-csv
 json
 matplotlib
 pandas-datareader
