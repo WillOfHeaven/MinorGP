@@ -1,22 +1,16 @@
 import numpy as np
 import cv2
 import csv as csv
-import json as js
 import matplotlib.pyplot as plt
 import pandas_datareader as pd_data
-import pickle
-import requests
 import keras
 from keras.models import load_model
 import streamlit as st
-import datetime
-import sklearn
 import numpy as np
 import pandas as pd
 import streamlit as st
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
-from svgpathtools import parse_path
 
 def main():
     if "button_id" not in st.session_state:
@@ -73,7 +67,7 @@ def about_page():
 
     st.write("""
     We welcome your feedback and contributions to this application! 
-    - Feel free to report any issues or suggest improvements on [GitHub repository link] (if applicable). 
+    - Feel free to report any issues or suggest improvements on [github](https://github.com/WillOfHeaven/MinorGP) (if applicable). 
     """)
 def full_app():
     st.sidebar.header("Configuration")
@@ -108,13 +102,15 @@ def full_app():
     )
 
     #st.button("Clear canvas", key="clear_canvas")
-    model = load_model("mnist.h5")
+    model = load_model("mnist1.h5")
     if canvas_result.image_data is not None:
         img = cv2.cvtColor(canvas_result.image_data, cv2.COLOR_RGBA2GRAY)  # Convert the image to grayscale
         img_resized = cv2.resize(img, (28, 28))  # Resize the image to 28x28
+        img_resized1 = cv2.resize(img, (56, 56))  # Resize the image to 28x28
+        st.image(img_resized1,caption="Resized Image with changed dimensions 56 x 56")
         img_reshaped = img_resized.reshape(1, 28, 28, 1)  # Reshape the image to match the model's expected input shape
         img_reshaped = img_reshaped.astype("float32")
-        st.image(img_resized,width=200, caption="Resized Image")
+        st.image(img_resized,caption="Resized Image")
         img_reshaped /= 255.0  # Normalize the image if your model was trained on normalized images
         response = model.predict(img_reshaped)  # Use the model to predict the digit
         st.header("Predicted Number")
