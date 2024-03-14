@@ -1,11 +1,15 @@
-numpy==1.24.3  # Latest version as of 2024-03-14
-opencv-python==4.9.0  # Latest version as of 2024-03-14
+numpy
+opencv-python
 csv
-matplotlib==3.6.3  # Latest version as of 2024-03-14
-pandas-datareader==1.3.2  # Latest version as of 2024-03-14
-requests==2.30.1  # Latest version as of 2024-03-14
-keras==2.5.0  # Latest stable version as of 2024-03-14 (Consider TensorFlow 2.x for future projects)
-streamlit==1.19.1  # Latest version as of 2024-03-14
-sklearn==1.2.0  # Latest version as of 2024-03-14
-Pillow==9.5.0  # Latest version as of 2024-03-14
-streamlit-drawable-canvas==0.4.3  # Latest version as of 2024-03-14
+json
+matplotlib
+pandas-datareader
+pickle
+requests
+keras
+streamlit
+datetime
+sklearn
+Pillow
+streamlit-drawable-canvas
+svgpathtools
