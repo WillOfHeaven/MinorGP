@@ -1,9 +1,6 @@
 numpy
 opencv-python
 matplotlib
-pandas-datareader
-pickle
-requests
 keras
 scikit-learn
 streamlit-drawable-canvas
