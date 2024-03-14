@@ -100,6 +100,7 @@ def full_app():
 
     #st.button("Clear canvas", key="clear_canvas")
     model = load_model("mnist1.h5")
+    model1 = load_model("mnist.h5")
     if canvas_result.image_data is not None:
         img = cv2.cvtColor(canvas_result.image_data, cv2.COLOR_RGBA2GRAY)  # Convert the image to grayscale
         img_resized = cv2.resize(img, (28, 28))  # Resize the image to 28x28
@@ -110,8 +111,11 @@ def full_app():
         st.image(img_resized,caption="Resized Image")
         img_reshaped /= 255.0  # Normalize the image if your model was trained on normalized images
         response = model.predict(img_reshaped)  # Use the model to predict the digit
-        st.header("Predicted Number")
+        response1 = model1.predict(img_reshaped)  # Use the model to predict the digit 
+        st.header("Predicted Number new model")
         st.header(np.argmax(response))  # The predicted digit is the one with the highest probability
+        st.header("Predicted Number old model")
+        st.header(np.argmax(response1))        
         # st.header("Image type as returned by the canvas component")
         #st.write(type(canvas_result.image_data))
         st.header("Matrix contiaining response data")
