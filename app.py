@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import csv as csv
 import matplotlib.pyplot as plt
 import pandas_datareader as pd_data
 import keras
@@ -8,7 +7,6 @@ from keras.models import load_model
 import streamlit as st
 import numpy as np
 import pandas as pd
-import streamlit as st
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 
