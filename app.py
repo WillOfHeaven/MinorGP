@@ -99,7 +99,7 @@ def full_app():
     )
 
     #st.button("Clear canvas", key="clear_canvas")
-    model = load_model("mnist1.h5")
+    model = load_model("new_mnist(4x4)_epoch70.h5")
     model1 = load_model("mnist.h5")
     if canvas_result.image_data is not None:
         img = cv2.cvtColor(canvas_result.image_data, cv2.COLOR_RGBA2GRAY)  # Convert the image to grayscale
