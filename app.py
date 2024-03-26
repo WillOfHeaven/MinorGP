@@ -118,8 +118,10 @@ def full_app():
         st.header(np.argmax(response1))        
         # st.header("Image type as returned by the canvas component")
         #st.write(type(canvas_result.image_data))
-        st.header("Matrix contiaining response data")
+        st.header("Matrix contiaining response data for the new model")
         st.write(response)
+        st.header("Matrix contiaining response data for the old model")
+        st.write(response1)
     
 
 
