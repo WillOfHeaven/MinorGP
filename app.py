@@ -112,9 +112,9 @@ def full_app():
         img_reshaped /= 255.0  # Normalize the image if your model was trained on normalized images
         response = model.predict(img_reshaped)  # Use the model to predict the digit
         response1 = model1.predict(img_reshaped)  # Use the model to predict the digit 
-        st.header("Predicted Number new model")
+        st.header("Predicted Number new model new_mnist(4x4)_epoch70")
         st.header(np.argmax(response))  # The predicted digit is the one with the highest probability
-        st.header("Predicted Number old model")
+        st.header("Predicted Number old modelv mnist.h5 the first one)
         st.header(np.argmax(response1))        
         # st.header("Image type as returned by the canvas component")
         #st.write(type(canvas_result.image_data))
