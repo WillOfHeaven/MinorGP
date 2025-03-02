@@ -93,11 +93,11 @@ To improve the model performance, you can retrain it using additional data or fi
 
 ## Contributors
 
-- Gaurav Rawat
-- Karthik Sharma Dhulipati
-- Mohak Kumar Srivastava
-- Naman Jain
-- Sambuddha Chatterjee
+- Gaurav Rawat ( Alternative Solution explorer ) 
+- Karthik Sharma Dhulipati (  ML Research ) 
+- Mohak Kumar Srivastava ( UI ) 
+- Naman Jain ( Research ) 
+- Sambuddha Chatterjee ( ML Pipeline ) 
 
 ## Feedback
 
